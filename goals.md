@@ -48,6 +48,6 @@
 
 
 
-!\[Иллюстрация](resources/image.png)
+![Иллюстрация](resources/image.png)
 
 
