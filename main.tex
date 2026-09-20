@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=1.5cm,top=2cm,bottom=2cm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\begin{document}
+% --- TITLE PAGE ---
+\begin{titlepage}
+\centering
+{\large Министерство науки и высшего образования Российской Федерации\par}
+\vspace{0.5cm}
+{\large [Университет ИТМО]\par}
+\vspace{2cm}
+{\Large Отчёт по лабораторной работе\par}
+\vspace{0.5cm}
+{\large Знакомство с системой контроля версий Git и сервисом GitHub\par}
+\vspace{2cm}
+\begin{flushright}
+Выполнил: Каира Еммануэль\\
+Группа: R 3343\\
+Проверил: Сениченкова Яна Олеговна
+\end{flushright}
+\vfill
+{\large [Ваш город], 2026\par}
+\end{titlepage}
+\tableofcontents
+\newpage
+% --- TASK TEXT ---
+\section{Текст задания}
+\textbf{Цель:} поразмышлять о своих целях и задачах на текущий семестр. Создать файлы в репозитории, освоить работу с Git из командной строки, подготовить отчет.
+\textbf{Задание 1:} Создать файл goals.md, добавить заголовки, текст о своем опыте, нумерованный и ненумерованный списки, создать папку resources с изображением.
+\textbf{Задание 2:} Клонировать репозиторий, создать info.md, выполнить коммиты, создать .gitignore и объяснить результат игнорирования файла data/dataset.csv.
+\textbf{Задание 3:} Подготовить отчет в формате PDF и загрузить его в репозиторий.
+% --- TASK 1 ---
+\section{Результат выполнения Задания 1}
+\subsection{Содержимое файла goals.md}
+\begin{verbatim}
+% 
+# Мои цели
+
+
+
+1\. Научиться читать чужой код и работать в команде.
+
+2.Собрать портфолио проектов для резюме. 
+
+3\.Научиться читать чужой код и работать в команде.
+
+## Задачи
+
+
+
+\- Изучить основные команды Git: `add`, `commit`, `push`, `pull`.
+
+\- Понять, как работает `.gitignore`.
+
+\- Подготовить отчёт в LaTeX и загрузить его в репозиторий.
+
+\- Научиться форматировать документы в Markdown.
+
+\- Регулярно делать коммиты с понятными сообщениями.
+
+
+
+!\[Иллюстрация](resources/image.png)
+
+
+ goals.md
+% (Скопируйте текст из Блокнота и вставьте сюда)
+\end{verbatim}
+\textit{Примечание: Изображение было успешно загружено в папку resources и добавлено в файл goals.md.}
+% --- TASK 2 ---
+\section{Результат выполнения Задания 2}
+\subsection{Содержимое файла info.md}
+\begin{verbatim}
+% Каира Еммануель
+
+windows 11 Home
+
+17/09/2026 17:25
+
+ info.md
+% (3 строки: Каира Еммануель, windows 11 Home, 17/09/2026 17:25)
+\end{verbatim}
+\subsection{Содержимое файла .gitignore}
+\begin{verbatim}
+data/
+\end{verbatim}
+\subsection{Объяснение результата попытки закоммитить файл data/dataset.csv}
+В файл .gitignore была добавлена строка \texttt{data/}. Это указывает Git игнорировать всё содержимое папки data. Поэтому при выполнении команды \texttt{git add data/dataset.csv} Git проигнорировал этот файл, и он не был добавлен в индекс. Соответственно, коммит с этим файлом не создался. Это доказывает, что .gitignore работает корректно.
+% --- CONCLUSION ---
+\section{Вывод}
+В ходе выполнения данной лабораторной работы я ознакомился с системой контроля версий Git и сервисом GitHub. Я научился создавать репозитории, работать с файлами через веб-интерфейс и командную строку, а также освоил базовые команды Git (add, commit, push) и настройку .gitignore.
+\end{document}
